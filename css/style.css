@@ -1,0 +1,166 @@
+h1 {
+  font-family: Roboto-Regular;
+}
+
+h2 {
+  font-family: Montserrat-Regular;
+}
+
+h3 {
+  font-family: Merriweather-LightItalic;
+}
+
+h4 {
+  font-family: Montserrat-Light;
+}
+
+h5 {
+  font-family: HelveticaNeueLTProLt;
+}
+
+h6 {
+  font-family: HelveticaNeueLTProMd HelveticaNeueLTProRoman;
+}
+
+h7 {
+  font-family: HelveticaNeueLTProRoman;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+}
+header h1 {
+  font-family: "HelveticaNeueLTProLt";
+  font-size: 44px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+  text-align: center;
+  margin-top: 206px;
+}
+header h3 {
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  color: #898888;
+  text-align: center;
+}
+header .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 188px;
+  height: 57px;
+  border: 1px solid #000000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: Montserrat-Regular;
+  font-size: 13px;
+  margin: 0 auto;
+  font-weight: 400;
+  latter-spacing: 0.4em;
+  color: #000;
+  margin-top: 44px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .button:hover {
+  background-color: #000;
+  color: #fff;
+}
+header nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+header nav ul a {
+  text-decoration: none;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #989696;
+}
+header nav ul a:hover {
+  color: #010101;
+}
+header nav ul li.active a {
+  color: #010101;
+}
+
+main .about {
+  background-color: #1D1D1D;
+  color: #FEFEFE;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30vw 178px 30vw;
+  grid-template-columns: repeat(2, 30vw);
+  -ms-grid-rows: 276px 178px 276px;
+  grid-template-rows: 276px 276px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 178px;
+  padding-top: 10vh;
+  padding-bottom: 15vw;
+  background: url(../images/1.png) center bottom repeat-x, url(../images/2.png) center bottom repeat-x, #1d1d1d;
+}
+
+main .about > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+main .about > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+main .about > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+main .about > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+main .about .about__item {
+  background-color: #181818;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  padding: 0 1vw;
+}
+main .about .about__item .about__year {
+  font-family: HelveticaNeueLTProRoman;
+  font-size: 48px;
+  color: #fefefe;
+}
+main .about .about__item .about__text {
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  color: #b7b7b7;
+}
